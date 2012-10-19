@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    </head>
+    <body>
+        <div id="example"></div>
+        <br/>
+        <div id="example2"></div>
+    </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="extras-math.js"></script>
+    <script src="Colors.js"></script>
+    <script src="jquery.gauge.js"></script>
+    <script>
+        $('#example2').gauge('init', {defaultLevel:5});
+        $('#example').gauge('init', {defaultLevel:5,unitHighColor:new Color(255,255,20), unitLowColor:new Color(255,0,0)});
+    </script>
+</html>
